@@ -1,0 +1,48 @@
+.header {
+    &__link {
+        display: inline-block;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: var(--color-primary);
+    }
+    
+    &__link-padding {
+        padding-right: 23px;
+    }
+    
+    &__check {
+        background: url("/src/assets/check.svg") right no-repeat;
+        padding-left: 12px;
+    }
+    
+    &__check--two {
+        display: none;
+        position: absolute;
+        top: 14px;
+        right: 23px;
+    }
+}
+
+.sub-menu{
+    &__list {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 30px;
+        padding-top: 5px;
+        border-top: 3px solid var(--color-hover);
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 0 0 10px 10px;
+        z-index: 100;
+    }
+    
+    &__link {
+    }
+}

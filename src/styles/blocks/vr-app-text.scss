@@ -1,0 +1,40 @@
+.vr-app-development {
+    &__row-bot {
+        //display: flex;
+        column-gap: 10px;
+        justify-content: space-between;
+        //margin-bottom: 86px;
+        }
+    
+    &__label {
+    font-family: "Harabara";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    }
+
+    &__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-primary-text);
+    //max-width: 553px;
+    min-height: 248px;
+    padding-top: 8px;
+
+    & p {
+        padding-bottom: 30px;
+    }
+
+    & p:last-child {
+        padding-bottom: 0;
+    }
+    }
+}

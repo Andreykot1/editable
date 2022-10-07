@@ -1,0 +1,150 @@
+.projects {
+    position: relative;
+
+    &__bg {
+    & svg {
+        width: 100%;
+        height: 100%;
+    }
+    }
+
+    &__wrapper {
+    background-color: rgba($color: #276ED8, $alpha: 0.04);
+    padding-bottom: 150px;
+    padding-top: 17px;
+    }
+
+    &__content {
+    justify-content: center;
+    }
+
+    &__title {
+    text-align: center;
+    font-family: 'Harabara';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary-title);
+    }
+
+    &__row-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    &__left-arrow {
+    & img{
+        padding-right: 7px;
+    }
+    }
+
+    &__right-arrow {
+    & img{
+        padding-left: 7px;
+    }
+    }
+    
+    &__row {
+    justify-content: center;
+    }
+
+
+
+    &__bg-bottom {
+    & svg {
+        margin-bottom: 109px;
+    }
+    }
+}
+
+@media (max-width: 1536px) {
+    .projects {
+        &__row {
+            column-gap: 18px;
+        }
+
+        &__card {
+            min-width: 300px;
+        }
+
+        &__row-two{
+            column-gap: 8px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects {
+        &__arrow {
+            display: none;
+        }
+
+        &__row {
+            display: block;
+            max-width: 600px;
+        }
+
+        &__card {
+            margin-bottom: 40px;
+        }
+        
+        &__row-two :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        &__title-img {
+            font-size: 18px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (min-width: 1536px) {
+    .projects {
+        &__row {
+            column-gap: 80px;
+        }
+
+        &__row-two{
+            column-gap: 37px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects {
+        &__row {
+            display: flex;
+        }
+
+    }
+}
+
+@media (min-width: 480px) {
+    .projects {
+        &__title-img {
+            font-size: 24px;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 39px;  
+            letter-spacing: 0.1em;
+            margin-bottom: 109px;
+        }
+    }
+}

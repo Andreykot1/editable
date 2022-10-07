@@ -1,0 +1,263 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template: 80px / minmax(auto, 210px) 1fr minmax(auto, 720px) 1fr minmax(auto, 160px);
+    align-items: center;
+    justify-items: center;
+    &__logo {
+        grid-column: 1/2;
+        padding: 0 10px 15px 3px;
+    }
+
+    &__menu {
+        grid-column: 3/4;
+    }
+
+    &__link-padding {
+        padding-right: 23px;
+    }
+
+    &__link--lonly {
+        padding-right: 20px;
+    }
+
+    &__list {
+    display: grid;
+    grid-auto-flow: column;
+    padding-top: 1px;
+    padding-left: 13px;
+
+    & li {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        position: relative;
+    }
+
+    & a {
+        color: var(--color-primary);
+    }
+
+    & li:hover .sub-menu__list {
+        display: block;
+        box-shadow: 2px 4px 16px rgba(158, 158, 158, 0.4);
+        z-index: 100;
+    }
+
+    & li :hover {
+        color: var(--color-hover);
+    }
+
+    & li:hover .header__check--two {
+        display: block;
+    }
+
+    & li :active {
+        color: var(--color-active);
+    }
+    }
+
+    &__link {
+    display: inline-block;
+
+    & a {
+        padding-right: 10px;
+    }
+    }
+    &__check {
+    background: url("/assets/check.svg") right no-repeat;
+    padding-left: 12px;
+    }
+
+    &__check--two {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 17.6px;
+    }
+
+    &__check--three {
+    right: 20px;
+    }
+
+    &__check--last {
+    padding-left: 12px;
+    }
+
+    .sub-menu {
+
+    &__list {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 30px;
+        padding-top: 5px;
+        border-top: 3px solid var(--color-hover);
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 0 0 10px 10px;
+        z-index: 100;
+    }
+
+    &__list--one {
+        min-width: 370px;
+    }
+    }
+
+    &__btn {
+    grid-column: 5/6;
+    box-sizing: border-box;
+
+    & a {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #06b25f;
+        display: inline-block;
+        background: #ffffff;
+        border: 2px solid #06b25f;
+        border-radius: 6px;
+
+        &:active {
+        color: var(--color-active);
+        }
+    }
+
+    & :hover {
+        color: #ffffff;
+        background-color: #06b25f;
+        transition: all 0.2s ease 0s;
+    }
+    }
+
+    &__burger {
+    position: relative;
+    width: 30px; // Создаем блок
+    height: 20px;
+    z-index: 3;
+    transition: all 0.3s ease 0s;
+    grid-column: 5/6;
+    }
+
+    &__burger span {
+    position: absolute;
+    left: 0;
+    width: 100%; //рисуем полосу в спане
+    height: 4px;
+    background-color: #194484;
+    top: 10px;
+    transition: all 0.3s ease 0s;
+    border-radius: 4px;
+    }
+
+    &__burger:after {
+    content: "";
+    position: absolute;
+    left: 0; //описываем общие параметры полосы сверху и снизу
+    width: 100%;
+    height: 4px;
+    top: 0;
+    background-color: #194484;
+    transition: all 0.3s ease 0s;
+    border-radius: 4px;
+    }
+
+    &__burger::before {
+    content: "";
+    position: absolute;
+    left: 0; //описываем общие параметры полосы сверху и снизу
+    width: 100%;
+    height: 4px;
+    top: 20px;
+    background-color: #194484;
+    transition: all 0.3s ease 0s;
+    border-radius: 4px;
+    }
+}
+
+.header__link--last {
+    padding-left: 2px;
+}
+
+
+.header {
+    @media (max-width: 1024px) {
+        &__menu {
+            display: none;
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+            margin: 0 15px;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        &__link-padding {
+            padding-right: 10px;
+            font-size: 14px;
+        }
+
+        &__btn a {
+            padding: 0 5px;
+        }
+    }
+}
+
+.header {
+    @media (min-width: 1024px) {
+        &__burger {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        &__link-padding {
+            padding-right: 23px;
+            font-size: 16px;
+        }
+
+        &__btn a {
+            padding: 0 23px;
+        }
+    }
+}
+
+
+/*
+.header {
+
+    @media (max-width: 1120px) {
+    &__menu {
+        display: none;
+    }
+
+    &__btn {
+        display: none;
+    }
+    
+    &__burger {
+        display: block;
+        margin: 0 15px;
+    }
+
+    &__logo {
+        margin-left: 15px;
+    }
+    }
+}
+*/

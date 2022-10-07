@@ -1,0 +1,152 @@
+.container__faqs {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.faqs {
+    margin-bottom: 500px;
+
+    &__wrapper {
+    margin: 0 6px;
+    }
+
+    &__title {
+    font-family: 'Harabara';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-primary-title);
+    
+    }
+
+    &__row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+    //margin-right: 54px;
+    //margin-left: 62px;
+    }
+
+    &__left {
+    padding-left: 20px;
+    //margin-right: 35px;
+    }
+    
+    &__right {
+    //margin-right: 27px;
+    }
+
+    &__lines {
+    padding-top: 8px;
+    & svg {
+        width: 34px;
+        height: 100%;
+        padding-bottom: 10px;
+    }
+    }
+
+    &__center {
+    //padding: 0 110px 0 0;
+    position: relative;
+
+    & :last-child {
+        padding-bottom: 0;
+    }
+    }
+}
+
+@media (max-width: 1280px) {
+    .faqs {
+        margin-bottom: 100px;
+        
+        &__center {
+            padding-right: 10px;
+        }
+
+        &__text-point {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &__row {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        &__lines {
+            padding-left: 0;
+            margin-left: 0;
+        }
+        &__right {
+            margin-right: 0;
+        }
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .container__faqs {
+        padding: 0;
+    }
+    .faqs {
+        &__center {
+            padding-right: 0px;
+        }
+
+        &__left {
+            margin-right: 21px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+            margin-bottom: 38px;
+        }
+}
+}
+
+@media (min-width: 1280px) {
+    .faqs {
+        &__center {
+            padding-right: 110px;
+        }
+
+        &__text-point {
+            font-size: 20px;
+            line-height: 30px
+        }
+
+        &__row {
+            margin-right: 54px;
+            margin-left: 62px;
+        }
+
+        &__right {
+            margin-right: 27px;
+        }
+        
+    }
+}
+
+@media (min-width: 480px) {
+    .container__faqs {
+        padding: 0 20px;
+    }
+    .faqs {
+        &__center {
+            padding-right: 10px;
+        }
+
+        &__left {
+            margin-right: 35px;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 39px;
+            margin-bottom: 60px;
+        }
+}
+}

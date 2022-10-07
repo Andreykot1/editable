@@ -1,9 +1,7 @@
-$font-base-url: "/fonts/";
-
 @font-face {
     font-family: 'Noto Sans';
     src: local('Noto Sans Bold'), local('NotoSans-Bold'),
-        url('#{$font-base-url}NotoSans-Bold.woff2') format('woff2');
+        url('NotoSans-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,7 +10,7 @@ $font-base-url: "/fonts/";
 @font-face {
     font-family: 'Montserrat';
     src: local('Montserrat Bold'), local('Montserrat-Bold'),
-        url('#{$font-base-url}Montserrat-Bold.woff2') format('woff2');
+        url('Montserrat-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -21,7 +19,7 @@ $font-base-url: "/fonts/";
 @font-face {
     font-family: 'Montserrat';
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-        url('#{$font-base-url}Montserrat-Regular.woff2') format('woff2');
+        url('Montserrat-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -30,7 +28,7 @@ $font-base-url: "/fonts/";
 @font-face {
     font-family: 'Open Sans';
     src: local('Open Sans Regular'), local('OpenSans-Regular'),
-        url('#{$font-base-url}OpenSans-Regular.woff2') format('woff2');
+        url('OpenSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -39,17 +37,9 @@ $font-base-url: "/fonts/";
 @font-face {
     font-family: 'Harabara';
     src: local('Harabara'),
-        url('#{$font-base-url}Harabara.woff2') format('woff2');
+        url('Harabara.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
-//@font-face {
-//  font-family: "Comfortaa";
-//  src: local("Comfortaa Light"), local("Comfortaa-Light"),
-//    url("#{$font-base-url}Comfortaa/Comfortaa-Light.woff2") format("woff2");
-//  font-weight: 300;
-//  font-style: normal;
-//  font-display: swap;
-//}

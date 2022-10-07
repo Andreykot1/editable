@@ -1,0 +1,223 @@
+.services {
+    &__title {
+    font-family: "Harabara";
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-primary-title);
+    margin-bottom: 70px;
+    }
+
+    &__row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 18px;
+    justify-content: center;
+    margin-bottom: 265px;
+
+    & :hover {
+        background-color: #ffffff;
+    }
+    }
+
+    &__row-two {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr repeat(3 minmax(auto, 322px)) 1fr;
+    grid-template-rows: 320px;
+    padding: 0 173px;
+    margin: 60px 0 248px 0;
+    column-gap: 18px;
+    cursor: pointer;
+
+    & :hover {
+        background-color: #ffffff;
+    }
+    }
+
+    &__card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #f4f8fd;
+    box-shadow: 0 3px 16px 4px rgba(29, 51, 107, 0.1);
+    border-radius: 16px;
+    }
+    
+    &__icon {
+    text-align: center;
+    }
+    
+    &__card--four {
+    padding: 0 30px;
+    }
+
+    &__text {
+    font-family: "Harabara";
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    }
+}
+
+.services__talk {
+    position: relative;
+    margin-bottom: 129px;
+
+    &--top {
+        margin-bottom: -2px;
+        
+        & svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &--wrapper {
+        background-color: var(--color-talks);
+    }
+
+    &--row {
+        text-align: center;
+        padding: 62px 10px 71px 10px;
+    }
+
+    &--text-one {
+        font-family: "Harabara";
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 16px;
+        padding-top: 10px;
+    }
+
+    &--text-two {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 36px;
+    }
+
+    &--btn {
+
+        & a {
+        background: #ffffff;
+        outline: 2px solid #06b25f;
+        border-radius: 6px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 36px;
+        color: #06b25f;
+        text-align: center;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 3px 30px;
+        transition: all 0.3s ease 0s;
+        }
+
+        & a:hover {
+            color: #ffffff;
+            background-color: #06b25f;
+            transition: all 0.2s ease 0s;
+            outline: 2px solid #ffffff;
+            border-radius: 6px;
+        }
+
+        & a:active {
+            color: var(--color-active);
+        }
+    }
+
+    &--bottom {
+        margin-top: -2px;
+
+        & svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.services {
+    @media (max-width: 768px) {
+        &__card {
+            width: 145px;
+            height: 162px;
+            & img {
+                max-width: 51px;
+            }
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 22px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 24px;
+        }
+        
+    }
+}
+
+.services {
+    @media (min-width: 768px) {
+        &__card {
+            width: 320px;
+            height: 322px;
+        }
+
+        &__text {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 39px;
+        }
+        
+    }
+}
+
+.services__talk {
+    @media (max-width: 768px) {
+        &--text-one {
+            font-size: 24px;
+            line-height: 38px;
+            margin-bottom: 12px;
+        }
+
+        &--text-two {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+.services__talk {
+    @media (min-width: 768px) {
+        &--text-one {
+            font-size: 44px;
+            line-height: 60px;
+            margin-bottom: 16px;
+        }
+
+        &--text-two {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 // Libs
 // ...
 
+
 // Base
 @import "base/functions";
 @import "base/mixins";
@@ -8,11 +9,27 @@
 @import "base/root";
 @import "base/reboot";
 
+
 // Blocks
-// ...
+@import "../styles/blocks/header-list.scss";
+@import "../styles/blocks/vr-app-text.scss";
+@import "../styles/blocks/contacts-address.scss";
+@import "../styles/blocks/projects-card.scss";
+@import "../styles/blocks/faqs-question.scss";
+@import "../styles/blocks/faqs-answer.scss";
+
 
 // Sections
-// ...
+@import "../styles/sections/header.scss";
+@import "../styles/sections/vr-app-development.scss";
+@import "../styles/sections/services.scss";
+@import "../styles/sections/contacts.scss";
+@import "../styles/sections/projects.scss";
+@import "../styles/sections/faqs.scss";
+@import "../styles/sections/footer.scss";
 
 // Templates
 // ...
+
+//fonts
+
